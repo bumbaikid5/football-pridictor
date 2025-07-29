@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Football Match Predictor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="background-overlay"></div>
+  <div class="container">
+    <h1>⚽ Match Predictor</h1>
+
+    <form>
+      <label for="team1">Team 1:</label>
+      <select id="team1">
+        <option value="chelsea">Chelsea</option>
+        <option value="barcelona">Barcelona</option>
+        <option value="man-city">Man City</option>
+      </select>
+
+      <label for="team2">Team 2:</label>
+      <select id="team2">
+        <option value="chelsea">Chelsea</option>
+        <option value="barcelona">Barcelona</option>
+        <option value="man-city">Man City</option>
+      </select>
+
+      <label for="team1Goals">Team 1 Avg Goals:</label>
+      <input type="number" id="team1Goals" />
+
+      <label for="team2Goals">Team 2 Avg Goals:</label>
+      <input type="number" id="team2Goals" />
+
+      <button type="button">Predict Winner</button>
+    </form>
+
+    <div class="team-logos">
+      <img id="logo1" src="" alt="Team 1 Logo" />
+      <img id="logo2" src="" alt="Team 2 Logo" />
+    </div>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

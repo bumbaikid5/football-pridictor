@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, sans-serif;
+  /* background-color: #f9f9f9; */
+  margin: 0;
+  padding: 0;
+}
+
+.background-overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url('../img/football.jpg');
+  background-position: center;
+  background-size: cover; 
+  z-index: -2;
+}
+
+.background-overlay::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.container {
+  max-width: 500px;
+  margin: 40px auto;
+  /* background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #fff;
+}
+
+input, select, button {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#result {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.team-logos {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.team-logos img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  transition: transform 0.3s;
+}
+
+.team-logos img:hover {
+  transform: scale(1.1);
+}
